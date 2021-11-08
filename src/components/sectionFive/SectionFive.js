@@ -2,7 +2,7 @@ import React from 'react'
 
 function sectionFive() {
     return (
-        <div>
+        <div id='review' data-aos="fade-in" data-aos-delay="100">
             <div className="section-5">
                 <div className="reviews container">
                     <div className="row mx-0">

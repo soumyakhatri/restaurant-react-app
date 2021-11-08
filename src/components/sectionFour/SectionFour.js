@@ -29,7 +29,7 @@ function SectionFour() {
     }
 
     return (
-        <div className='section-4 pb-5'>
+        <div className='section-4 pb-5' id='menu' data-aos="fade-in" data-aos-delay="100">
             <div className='container'>
                 <div className='row'>
                     {data.map(createList)}

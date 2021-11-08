@@ -6,8 +6,8 @@ import cook from '../../images/cook.png'
 
 function SectionTwo() {
     return (
-        <div>
-            <div className="section-2">
+        <div >
+            <div className="section-2" data-aos="fade-in" data-aos-delay="100">
                 <div className="container">
                     <div className="row row-1">
                         <div className="col-lg-6 d-flex flex-column align-items-center s2-col1-div">

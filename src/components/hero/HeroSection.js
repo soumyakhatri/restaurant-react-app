@@ -16,8 +16,8 @@ function HeroSection() {
                 </div>
 
                 <div className="d-flex flex-column flex-sm-row justify-content-center mt-4 heading-btns-div ff-l">
-                    <button className="btn-t  semi-transparent-button stb-black mx-3" type="button">BOOK A TABLE</button>
-                    <button className="btn-t btn-t-white mx-3 stb-white mt-4 mt-sm-0" type="button">SEE THE MENU</button>
+                    <a className="btn-t pt-3 semi-transparent-button stb-black mx-3" type="button" href="#reservation">BOOK A TABLE</a>
+                    <a className="btn-t pt-3 semi-transparent-button btn-t-white mx-3 stb-white mt-4 mt-sm-0" type="button" href="#menu">SEE THE MENU</a>
                 </div>
             </div>
         </div>

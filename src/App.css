@@ -22,7 +22,7 @@
   font-size: 45px;
 }
 .c-g{
-  color: #dab33e;
+  color: #c9a131;
 }
 
 @media (max-width: 480px) {
@@ -44,6 +44,11 @@
 }
 
 /* Navbar */
+
+a{
+  cursor: pointer;
+}
+
 .nav-links {
   font-family: 'Gentium Book Basic', serif;
 }
@@ -51,6 +56,10 @@
 .nav-link{
   color: white!important;
   margin-left: 4%;
+}
+
+.on-hover:hover{
+  color: black!important;
 }
 
 .navbar{
@@ -102,6 +111,14 @@
 
 .heading-btns-div{
   padding-bottom: 140px;
+}
+
+.stb-white:hover{
+  color:rgba(0, 0, 0, 0.7)
+}
+
+.stb-black:hover{
+  color:rgba(255, 255, 255, 0.5)
 }
 
 .btn-t {
@@ -334,3 +351,68 @@
     padding: 0 5%;
   }
 }
+
+/* Section-6 */
+
+.section-6 {
+  background-image: url('./images/pattern2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.section-6 .row-1{
+  padding: 100px 7%;
+}
+.section-6 p{
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media (max-width: 768px){
+  .section-6 .row-1{
+    padding: 100px 0;
+  }
+}
+
+/* form */
+
+.form input{
+  width: 200px;
+  border-color: #c8c6c6;
+  box-shadow: none;
+  border-style: solid;
+  border-width: 1px;
+  height: 37px;
+}
+
+.form input:focus-visible{
+  border-color:  #c9a131!important;
+}
+.form input:focus{
+  border-color:  #c9a131;
+}
+
+.form button{
+  background-color: #c9a131;
+  border: none;
+  width: 200px;
+  color: #fff;
+  height: 40px!important;
+  border-color: #dab33e;
+  border-radius: 0!important;
+}
+
+@media (max-width:576px){
+  .form label{
+    width: 200px;
+  }
+}
+
+/* Modal */
+/* 
+.pop{
+  width: 700px;
+  height: 600px;
+  background-color: red;
+} */

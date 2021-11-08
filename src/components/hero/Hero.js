@@ -4,7 +4,7 @@ import HeroSection from './HeroSection'
 
 function Hero() {
     return (
-        <div className="hero">
+        <div className="hero" id='hero'>
             <Navbar/>
             <HeroSection/>
         </div>
