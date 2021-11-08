@@ -1,4 +1,6 @@
 import React from 'react'
+import Decoration from '../../images/Decoration.png'
+
 
 function HeroSection() {
     return (
@@ -12,7 +14,7 @@ function HeroSection() {
                         <h1 className="ff-y">the right <br></br> ingredients for <br></br>the right food</h1>
                     </div>
 
-                    <img className="heading-img pt-3" src="images/Decoration.png" alt="" />
+                    <img className="heading-img pt-3" src={Decoration} alt="" />
                 </div>
 
                 <div className="d-flex flex-column flex-sm-row justify-content-center mt-4 heading-btns-div ff-l">
