@@ -14,7 +14,7 @@ function SectionThree() {
                         <div className="col-xl-6">
 
                         </div>
-                        <div className="col-xl-6 d-flex align-items-center justify-content-center justify-content-xl-start">
+                        <div data-aos="slide-right" data-aos-delay="100" className="col-xl-6 d-flex align-items-center justify-content-center justify-content-xl-start">
                             <div className="transparent-div d-flex flex-column align-items-center align-self-center">
                                 <h3 className="ff-y fs-36 fs-sm-26 text-center">Fine Ingredients</h3>
                                 <img className="mt-2" src={decoration} alt="decoration" />

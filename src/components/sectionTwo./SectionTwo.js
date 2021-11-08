@@ -6,7 +6,7 @@ import cook from '../../images/cook.png'
 
 function SectionTwo() {
     return (
-        <div >
+        <div>
             <div className="section-2" data-aos="fade-in" data-aos-delay="100">
                 <div className="container">
                     <div className="row row-1">

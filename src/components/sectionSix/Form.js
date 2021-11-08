@@ -33,7 +33,7 @@ function Form({ saveCustomerInfo, customerInfo, visibility, setVisiblity }) {
 
         setTimeout(() => {
             setVisiblity(false)
-        }, 5000);
+        }, 2000);
     }
 
     console.log(visibility)
@@ -41,7 +41,7 @@ function Form({ saveCustomerInfo, customerInfo, visibility, setVisiblity }) {
     return (
         <div className='form'>
             <form onSubmit={submitHandler}>
-                <div className='row'>
+                <div className='row form-div'>
                     <div className='col-sm-6 mt-3 d-sm-block d-flex flex-column justify-content-center align-items-center text-start'>
                         <label className='d-block fw-bold c-g'>Name</label>
                         <input
@@ -78,7 +78,7 @@ function Form({ saveCustomerInfo, customerInfo, visibility, setVisiblity }) {
                             onChange={(e) => setPhone(e.target.value)} />
                     </div>
                     <div className='col mt-4 d-flex justify-content-center'>
-                        <button className='book-now-btn btn' type='submit'>Book Now!</button>
+                        <button className='book-now-btn btn' disabled={name && email && date && phone ? false : true} type='submit'>Book Now!</button>
                     </div>
                 </div>
             </form>

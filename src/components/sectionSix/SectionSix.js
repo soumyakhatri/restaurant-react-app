@@ -15,7 +15,6 @@ function SectionSix() {
 
     console.log('Information entered by the customers', customerInfo)
     return (
-        <>
         <div id='reservation' data-aos="fade-in" data-aos-delay="100">
             <SectionSixPresentational>
                 <Form 
@@ -27,9 +26,7 @@ function SectionSix() {
                 
             </SectionSixPresentational>
             {visibility && <Modal customerInfo={customerInfo} />}
-            
         </div>
-        </>
     )
 }
 
