@@ -127,9 +127,6 @@ a{
 }
 
 @media (max-width:1024px) {
-  .heading{
-
-  }
   .heading h1{
     font-size: 60px;
     padding-top: 80px;
