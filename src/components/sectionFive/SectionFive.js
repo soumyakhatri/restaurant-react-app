@@ -1,4 +1,6 @@
 import React from 'react'
+import Divider2 from '../../images/Divider2.png'
+
 
 function sectionFive() {
     return (
@@ -11,7 +13,7 @@ function sectionFive() {
 
                             <div className="transparent-div-2 d-flex flex-column align-items-center justify-content-center">
                                 <h3 className="ff-y fs-36 fs-sm-26">Guest Reviews</h3>
-                                <img className="mt-2" src="images/Divider2.png" alt="" />
+                                <img className="mt-2" src={Divider2} alt="" />
 
                                 <p className="ff-dm fs-4 fs-sm-16 fw-light mt-0 px-5 text-center"><span className="quote ff-dg">‘‘</span>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and
               freshly baked food,
