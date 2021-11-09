@@ -28,7 +28,9 @@ function SectionSixPresentational(props) {
                                 <img class="mt-2" src={divider} alt="" />
                                 <p class="text-center fw-light mt-4">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food.</p>
                                 <p class="text-center fw-light mt-2">Delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.</p>
+                               
                                 {props.children}
+                                
                             </div>
 
                         </div>

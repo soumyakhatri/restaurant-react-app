@@ -5,27 +5,22 @@ import SectionSixPresentational from './SectionSixPresentational'
 
 function SectionSix() {
 
-    const [customerInfo, setCustomerInfo] = useState([])
+    const [customerData, setCustomerData] = useState([])
     const [visibility, setVisiblity] = useState(false);
 
-
     const saveCustomerInfo = (info) => {
-        setCustomerInfo([...customerInfo, info])
+        setCustomerData([...customerData, info])
     }
 
-    console.log('Information entered by the customers', customerInfo)
     return (
         <div id='reservation' data-aos="fade-in" data-aos-delay="100">
             <SectionSixPresentational>
-                <Form 
-                saveCustomerInfo={saveCustomerInfo} 
-                customerInfo={customerInfo}
-                visibility={visibility}
-                setVisiblity={setVisiblity}
+                <Form
+                    saveCustomerInfo={saveCustomerInfo}
+                    setVisiblity={setVisiblity}
                 />
-                
             </SectionSixPresentational>
-            {visibility && <Modal customerInfo={customerInfo} />}
+            {visibility && <Modal customerData={customerData} />}
         </div>
     )
 }

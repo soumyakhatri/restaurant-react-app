@@ -1,13 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import Modal from './Modal'
 
-function Form({ saveCustomerInfo, customerInfo, visibility, setVisiblity }) {
+function Form({ saveCustomerInfo, setVisiblity }) {
 
-    const inputNameRef = useRef(null)
-
-    // useEffect(() => {
-    //     inputNameRef.current.focus();
-    // }, [])
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -24,6 +19,7 @@ function Form({ saveCustomerInfo, customerInfo, visibility, setVisiblity }) {
             phone
         }
         saveCustomerInfo(customerInfo);
+        
         setName('');
         setEmail('');
         setDate('');
@@ -33,10 +29,8 @@ function Form({ saveCustomerInfo, customerInfo, visibility, setVisiblity }) {
 
         setTimeout(() => {
             setVisiblity(false)
-        }, 2000);
+        }, 3000);
     }
-
-    console.log(visibility)
 
     return (
         <div className='form'>
@@ -47,7 +41,7 @@ function Form({ saveCustomerInfo, customerInfo, visibility, setVisiblity }) {
                         <input
                             className='mt-1'
                             placeholder='your name*'
-                            type='text' ref={inputNameRef}
+                            type='text'
                             value={name}
                             onChange={(e) => setName(e.target.value)} />
                     </div>
@@ -87,4 +81,4 @@ function Form({ saveCustomerInfo, customerInfo, visibility, setVisiblity }) {
     )
 }
 
-export default Form
+export default React.memo(Form)
