@@ -34,7 +34,6 @@ function SectionFour() {
                 <div className='row'>
                     {data.map(createList)}
                 </div>
-
             </div>
         </div>
     )
